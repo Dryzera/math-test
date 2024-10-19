@@ -21,9 +21,11 @@ function checkToAnswer(answer, resultMultiplicate) {
         body.style.backgroundColor = '#72cb26' // se correto
     }
 
+    document.getElementById('correct-answer').textContent = resultMultiplicate;
+
     setTimeout(() => {
         location.reload();
-    }, 800);
+    }, 900);
 }
 
 let [leftNumber, rightNumber, resultMultiplicate] = generateNumbers();
